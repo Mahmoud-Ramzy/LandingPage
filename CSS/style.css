@@ -321,7 +321,7 @@ main button:first-of-type:hover {
 }
 
 /*End Home*/
-/*Start Home*/
+/*Start About*/
 #About {
     margin-top: var(--section-margin);
 }
@@ -471,4 +471,101 @@ main button:first-of-type:hover {
     }
 }
 
-/*About Home*/
+/*End About*/
+/*Start Projects*/
+#Projects {
+    margin-top: var(--section-margin);
+}
+
+.title::after {
+    position: absolute;
+    content: "";
+    bottom: -10px;
+    left: calc(50% - 25px);
+    width: 50px;
+    height: 3px;
+    background-image: linear-gradient(to top, var(--background-color), var(--primary-color));
+}
+
+.title {
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    text-align: center;
+    position: relative;
+}
+
+#Projects .cards {
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: space-between;
+    background-color: #060b11;
+    padding: 7px;
+    height: 400px;
+}
+
+.card figure {
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card .discription {
+    margin-top: 10px;
+    display: flex;
+    color: var(--primary-text-color);
+    padding-bottom: 20px;
+}
+
+.card .discription img {
+    max-width: 50px;
+    max-height: 50px;
+    margin: 10px 10px 0px 10px;
+    border-radius: 50%;
+}
+
+.card figure img {
+    width: 120%;
+
+}
+
+.card .discription .text h4 {
+    margin: 10px 0;
+}
+
+.card .discription .text p {
+    line-height: 25px;
+    margin: 10px 0;
+}
+
+.card .discription .text a {
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: #0050ff;
+    font-weight: 600;
+}
+
+.card:nth-of-type(2) .discription .text a {
+    color: #9f22ef;
+}
+
+.card:nth-of-type(3) .discription .text a {
+    color: #36b790;
+}
+
+@media (max-height: 400px) {
+    .card {
+        height: 350px;
+        padding: 0;
+    }
+}
+
+/*End Projects*/
