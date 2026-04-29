@@ -424,8 +424,6 @@ main button:first-of-type:hover {
     #About .container {
         flex-direction: column;
     }
-
-
 }
 
 @media (max-width: 768px) {
@@ -569,3 +567,146 @@ main button:first-of-type:hover {
 }
 
 /*End Projects*/
+/*Start Contact*/
+#Contact {
+    margin-top: var(--section-margin);
+    color: var(--primary-text-color);
+}
+
+
+
+#Contact h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#Contact h3 span {
+    color: var(--primary-color);
+}
+
+#Contact h3 {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 2.3em;
+    margin-bottom: 20px;
+}
+
+#Contact .call-me p:first-of-type {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+#Contact .question {
+    margin-bottom: 20px;
+}
+
+#Contact .call-me p {
+    margin-bottom: 5px;
+}
+
+#Contact .call-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#Contact .call-me i {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-right: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+#Contact form {
+    flex-grow: 0;
+}
+
+#Contact .info {
+    flex-basis: 70%;
+    flex-grow: 5;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    background: #060b1169;
+    border: none;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    color: var(--primary-text-color);
+    background-color: var(--primary-color);
+}
+
+@media (max-width:920px) {
+
+
+    #Contact form .info {
+        padding-right: 10px;
+    }
+
+    #Contact form {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    #Contact h2 {
+        margin-bottom: 20px;
+        font-size: 1.2em;
+    }
+
+    #Contact h3 {
+        font-size: 1.7em;
+        margin-bottom: 10px;
+    }
+
+    #Contact .call-me p:first-of-type {
+        font-size: 1.3em;
+    }
+
+    #Contact .call-me p:last-of-type {
+        font-size: 0.8em;
+    }
+
+    #Contact .call-me i {
+        font-size: 1.4em;
+        margin-right: 10px;
+    }
+
+    form textarea {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    #Contact form {
+        margin-top: 30px;
+        width: 80%;
+    }
+
+    #Contact .container {
+        flex-direction: column;
+    }
+}
+
+/*End Contact*/
+/*Start Footer*/
+/*End Footer*/
