@@ -51,7 +51,8 @@ nav .logo {
 }
 
 nav img {
-    height: 50px;
+    height: 25px;
+    margin-right: 2px;
 }
 
 nav .bars {
@@ -109,7 +110,7 @@ nav button:hover {
     }
 
     nav img {
-        height: 30px;
+        height: 20px;
     }
 
     nav h1 {
@@ -166,13 +167,14 @@ nav button:hover {
     }
 }
 
+
 /*End Navbar*/
 /*Start Home*/
 main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(/Images/LandingBKG.png);
+    background: url(../Images/LandingBKG.png);
     background-size: cover;
     background-position: 60%;
 }
@@ -287,6 +289,25 @@ main button:first-of-type:hover {
     main button {
         width: 150px;
     }
+}
+
+@media (max-height: 600px) {
+    main h2 {
+        font-size: 2em;
+    }
+
+    main p {
+        font-size: 1.2em;
+    }
+
+    main button {
+        font-size: 1em;
+    }
+
+    main button {
+        width: 170px;
+    }
+
 }
 
 /*End Home*/
