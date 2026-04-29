@@ -294,20 +294,30 @@ main button:first-of-type:hover {
 @media (max-height: 600px) {
     main h2 {
         font-size: 2em;
+        margin-bottom: 5px;
     }
 
     main p {
         font-size: 1.2em;
+        margin-bottom: 5px;
     }
 
     main button {
         font-size: 1em;
+        margin-bottom: 5px;
+
     }
 
     main button {
         width: 170px;
     }
 
+}
+
+@media (max-height: 350px) {
+    main .containerr {
+        justify-content: flex-end;
+    }
 }
 
 /*End Home*/
