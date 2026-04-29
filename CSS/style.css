@@ -172,7 +172,7 @@ main {
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: url(/Images/LandingBKG.png);
+    background: url(../Images/LandingBKG.png);
     background-size: cover;
     background-position: 60%;
 }
