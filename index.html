@@ -10,8 +10,14 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
             rel="stylesheet"
         />
+        <!-- FontAwesome -->
         <link rel="stylesheet" href="FontAwesome/css/all.css" />
+        <!-- CSS stylesheet -->
         <link rel="stylesheet" href="CSS/style.css" />
+        <!-- AOS (Animate on scroll) -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- Typing Effect -->
+        <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
         <script src="script.js"></script>
     </head>
     <body>
@@ -41,8 +47,7 @@
             <div class="overlay"></div>
             <div class="containerr">
                 <h2>
-                    build your future <br />
-                    with code
+                    I'm a <br><span class="animated"></span>
                 </h2>
                 <p>
                     I build modern, fast and responsive websites <br />
@@ -60,13 +65,13 @@
         <!-- Start About -->
         <section id="About">
             <div class="container">
-                <figure>
+                <figure data-aos="flip-left">
                     <img
                         src="Images/MahmoudRamzy.png"
                         alt="Mahmoud Ramzy's image"
                     />
                 </figure>
-                <figcaption>
+                <figcaption data-aos="flip-right">
                     <h2>about me</h2>
                     <h3>
                         I'm Mahmoud Ramzy, a <span>Fullstack Developer</span>
@@ -103,7 +108,7 @@
         <section id="Projects">
             <h2 class="title">featured projects</h2>
             <div class="cards">
-                <div class="card">
+                <div class="card"data-aos="zoom-in-right">
                     <figure><img src="Images/Laptop.jpg" alt="Laptop" /></figure>
                     <div class="discription">
                         <img
@@ -122,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in-left">
                     <figure><img src="Images/uiux.jpg" alt="UI/UX Image" /></figure>
                     <div class="discription">
                         <img
@@ -140,7 +145,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="zoom-in-up">
                     <figure><img src="Images/dashboard.avif" alt="Laptop" /></figure>
                     <div class="discription">
                         <img
@@ -163,10 +168,66 @@
             </div>
         </section>
         <!-- End Projects -->
+        <!-- Start Services -->
+        <section id="Services">
+            <h2 class="title">why choose me?</h2>
+            <div class="container">
+                <div class="service" data-aos="fade-right">
+                    <img
+                        src="Images/fast.png"
+                        alt="Fast Performance icon"
+                    />
+                    <div class="text">
+                        <h4>Fast Performance</h4>
+                        <p>
+                            I build fast and optimized websites.
+                        </p>
+                    </div>
+                </div>
+                <div class="service" data-aos="fade-up" data-aos-delay="200">
+                    <img
+                        src="Images/goal.png"
+                        alt=" Goals icon"
+                    />
+                    <div class="text">
+                        <h4>Focused on Goals</h4>
+                        <p>
+                            I always focus on your business goals.
+                        </p>
+                    </div>
+                </div>
+                <div class="service" data-aos="fade-up-right" data-aos-delay="400">
+                    <img
+                        src="Images/modern.png"
+                        alt="Modern Design icon"
+                    />
+                    <div class="text">
+                        <h4>Modern Design</h4>
+                        <p>
+                            Clean, modern and unique designs.
+                        </p>
+                    </div>
+                </div>
+                <div class="service" data-aos="fade-left" data-aos-delay="600">
+                    <img
+                        src="Images/reliability.png"
+                        alt="Reliability icon"
+                    />
+                    <div class="text">
+                        <h4>Reliability</h4>
+                        <p>
+                            Reliable support and on-time delivery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
         <!-- Start Contact -->
         <section id="Contact">
             <div class="container">
-                <div class="info">
+                <div class="info" data-aos="zoom-in-right" data-aos-offset="200"
+                data-aos-easing="ease-in-sine">
                     <h2>get in touch</h2>
                     <h3>
                         let's work <span>together!</span>
@@ -196,7 +257,7 @@
                         </div>
                     </div>
                 </div>
-                    <form action="mailto:mahmoudramzy741@gmail.com">
+                    <form action="mailto:mahmoudramzy741@gmail.com" data-aos="zoom-out-left">
                         <input type="text" name="name" placeholder="Your Name" required>
                         <input type="email" name="email" placeholder="Your Email" required>
                         <input type="text" name="subject" placeholder="Subject" required>
@@ -208,7 +269,29 @@
         </section>
         <!-- Start Contact -->
         <footer>
-            
+            <div class="logo">
+                <img src="Images/RamzyLogo.png" alt="Ramzy Logo" />
+                <h1>Ramzy<span>Rise</span></h1>
+            </div>
+            <p>Building digital products <br> that make an impact.</p>
+            <ul>
+                <li><a href="https://www.facebook.com/profile.php?id=61562937367560" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/mahmoud-ramzy-8861aa234/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/Mahmoud-Ramzy" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+            <small> &copy; 2024 Ramzy Rise. All rights reserved</small>
         </footer>
     </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        var typed = new Typed(".animated", {
+    strings: ["Software Engineer", "Web Developer"],
+    typeSpeed: 150,
+    backSpeed: 90,
+    typeDelay: 1000,
+    loop: true
+});
+    </script>
 </html>
