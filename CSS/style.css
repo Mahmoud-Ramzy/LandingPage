@@ -82,11 +82,32 @@ nav ul a {
     text-decoration: none;
     color: var(--primary-text-color);
     transition: color 0.4s 0s cubic-bezier(0.57, 0, 0.22, 1.01), letter-spacing 0.5s 0s cubic-bezier(0.57, 0, 0.03, 1.04);
+    position: relative;
 }
 
 nav ul li:hover a {
     color: var(--secondary-color);
     letter-spacing: 2px;
+}
+
+.activated a {
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+}
+
+.activated a::after {
+    width: 70%;
+}
+
+nav li a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    position: absolute;
+    bottom: -2px;
+    left: 15%;
+    transition: all 0.3s 0s cubic-bezier(0.44, -0.01, 0, 1.01);
 }
 
 nav button {

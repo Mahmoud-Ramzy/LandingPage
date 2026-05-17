@@ -31,3 +31,21 @@ async function openNavbar() {
         menu = false;
     }
 }
+AOS.init();
+var typed = new Typed(".animated", {
+    strings: ["Software Engineer", "Web Developer"],
+    typeSpeed: 150,
+    backSpeed: 90,
+    typeDelay: 1000,
+    loop: true,
+});
+let navItems = document.querySelectorAll("#menu li");
+console.log(navItems);
+navItems.forEach((ele) => {
+    ele.onclick = () => {
+        //first remove the class from all other items
+        navItems.forEach((ele) => ele.classList.remove("activated"));
+        //then add the class to curr item
+        ele.classList.add("activated");
+    };
+});
